@@ -1,3 +1,4 @@
+import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -8,8 +9,8 @@ public class Main {
         int n = scanner.nextInt();
         Polygon.PolygonBuilder polygonBuilder = Polygon.builder();
         for(int i = 0; i < n; i++ ){
-            int x = scanner.nextInt();
-            int y = scanner.nextInt();
+            BigInteger x = new BigInteger(scanner.next());
+            BigInteger y = new BigInteger(scanner.next());
             Vector vertex = new Vector(x,y);
             polygonBuilder.append(vertex);
         }
